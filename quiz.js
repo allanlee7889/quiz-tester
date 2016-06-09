@@ -1,3 +1,5 @@
+console.log("Loaded");
+console.clear();
 /* global $ */
 /* exports isGameOver, whoWon, playTurn, restart, currentQuestion, correctAnswer, numberOfAnswers */
 
@@ -9,7 +11,17 @@ function Question (prompt, answers, correctAnswerIndex) {
 }
 
 // using the new keyword and the constructor we can create questions for the quiz
-var question1 = new Question('the question', ['answer a', 'answer b', 'answer c', 'answer d'], 0)
+var question1 = new Question('What is the first name of Russia's President Putin?', ['Valentin', 'Valeriy', 'Vladimir', 'Vladivar'], 2)
+var question2 = new Question('Whom did George W. Bush defeat in the elections of November 2004?
+', ['Al Gore', 'Arnold Schwarzenegger', 'John Kerry', 'Rudy Giuliani'], 2)
+var question3 = new Question('Which Stock Exchange's activity is reflected by the Nikkei index?', ['Hong Kong', 'Manila', 'Singapore', 'Tokyo'], 3)
+var question4 = new Question('The railway station of Marne-la-Vallee-Chessy is the terminus for travellers to which resort?', ['Chamonix', 'Disneyland Resort Paris', 'Meribel', 'Val d'Isere'], 1)
+var question5 = new Question('Which Italian city is served by Marco Polo International Airport?', ['Bologna', 'Florence', 'Genoa', 'Venice'], 3)
+var question6 = new Question('What would you find under the icing of a Christmas Cake?', ['Buttercream', 'Jam', 'Marzipan', 'Pastry'], 2)
+var question7 = new Question('Pablo Picasso was born in 1881 in which Spanish city?', ['Madrid', 'Malaga', 'Marbella', 'Murcia'], 1)
+var question8 = new Question('According to KFC, Colonel Sanders' 'secret recipe' contains how many herbs and spices?', ['9', '10', '11', '12'], 2)
+var question9 = new Question('Triton is the largest moon of which planet?', ['Jupiter', 'Saturn', 'Uranus', 'Neptune'], 3)
+var question10 = new Question('Madrid lost out to Rio de Janeiro on Friday in the bidding to host the 2016 Olympics. Which other European city was one of the seven original applicants?', ['Berlin', 'Oslo', 'Prague', 'Vienna'], 2)
 
 // we can create an object to represent all of the settings and scores for the quiz
 var quiz = {
